@@ -1,4 +1,4 @@
-# ssh 免密登录脚本
+# ssh 免密登录脚本（CentOS7）
 
 
 
@@ -195,9 +195,11 @@ Main
 
 以Test执行结果：
 
+**问题1：**以Test用户运行时，发现如果sshpass没有安装，Test用户没有权限安装sshpass，这个问题放到后面解决
+
 ![TestResult](imgs/TestResult.png) 
 
-可以看到测试ssh 连接这一步没有找到`ip`命令，但是单独执行`ip addr`是有结果的
+**问题2：**可以看到测试ssh 连接这一步没有找到`ip`命令，但是单独执行`ip addr`是有结果的
 
 把测试`Checkssh()`函数中查找ip部分改为grep网卡 `grep -rn "10.110.200.205" /etc/sysconfig/network-scripts/*  1>/dev/null` 可以
 
