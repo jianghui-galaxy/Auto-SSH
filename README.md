@@ -24,7 +24,7 @@
 
 结构如下：
 
- ![mode0](imgs/mode0.jpg)
+ ![mode0](imgs/mode0.jpg )
 
 
 
@@ -205,7 +205,7 @@ Main
 
 最终代码为：
 
-```
+```shell
 #!/bin/bash
 
 DEFAULT_USER=Test
@@ -313,7 +313,8 @@ Main
 
 `vim auto-ssh-NtoN.sh`
 
-```
+```shell
+##此代码暂不公开
 
 ```
 
@@ -335,7 +336,9 @@ Main
 
 4、当需要向集群添加主机时，只需指定新的主机文件，不更改原来的 hosts.all ，既可以配置原主机+新主机任意两两之间的ssh无密登录，并且可以不断向无密登录集群添加任意数量的新主机
 
-
+```shell
+#
+```
 
 
 
@@ -349,7 +352,7 @@ Main
 
 关闭hosts.all中的部分主机
 
-
+更换ssh端口
 
 
 
@@ -359,7 +362,7 @@ Main
 
 关闭hosts.all中的部分主机
 
-
+更换ssh端口
 
 
 
